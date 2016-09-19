@@ -1,6 +1,8 @@
-# Add your own tasks in files placed in lib/tasks ending in .rake,
-# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
+require 'bundler/setup'
+require 'padrino-core/cli/rake'
 
-require File.expand_path('../config/application', __FILE__)
+PadrinoTasks.use(:database)
+PadrinoTasks.use(:activerecord)
+PadrinoTasks.init
 
-Rails.application.load_tasks
+task :default => :test
