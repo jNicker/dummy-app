@@ -6,6 +6,6 @@
 #   command "mkdir -p #{release_path}/public/test && cp -r #{release_path}/public/assets/* #{release_path}/public/test || true"
 # end
 
-Chef::Log.fatal("*"*100)
-Chef::Log.fatal("Running deploy/after_restart.rb")
-Chef::Log.fatal("*"*100)
+# Chef::Log.fatal("*"*100)
+# Chef::Log.fatal("Running deploy/after_restart.rb")
+# Chef::Log.fatal("*"*100)
